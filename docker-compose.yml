@@ -1,0 +1,11 @@
+services:
+  postgress:
+    image: postgres:alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    # volumes:
+    #   - ~/Developer/Databases/project/group-generator/data:/var/lib/postgresql/data
